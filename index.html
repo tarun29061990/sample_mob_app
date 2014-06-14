@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<title>StopAtDoc</title>
+		<meta charset="utf-8">
+		<meta name="description" content="StopAtDoc" />
+		<meta name="author" content="">
+		<meta name="keywords" content="" />
+		<!-- Optimized mobile viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="stylesheet" type="text/css" media="all" href="index.css">
+	</head>
+	<body>
+		<header>
+			<div class="header">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAlCAMAAACDOLyvAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEHRSTlMAECAwQFBgcICPn6+/z9/vIxqCigAAAhNJREFUeAG1loFu5CoMRQ04xCQknP//2hfDSzbaql1VGo5muKPiYOxLFeRvlF2mU0Cmc4LKZCKwymQybb4pG4U235J0fWZb0mSfbcrKfn03mYpXkThlKo04homMInayTGTYYS9TQjYz9V/Rxy+YWRJHr49drP/swqhBOZ4cB45J2DD5ikLfUar45pxv27A17QpxSJDBAvvSaKL0JEH1/ynV/iDQQl+/D8cBxCfONT5WUF2VU5zK8idJ20pWBY8pLqWvBkeQ0DghjxrUQD2t3XFDd+lsQLrUfOLWd7tKuvQsGU5f1KBdukqGBQ7JJ9TUkyxgd5zrwehzgMr2quBtSq4AqbdrhxBgN8iuUmE5ID7tGknuOFdZR8OMGiG+vHh+lEqUCtqTVPC5arC4RgbllWQHu+O6ppGksciOyfIUcKD3meawBlGhruvY3WpwXloKg1MMSjIG8Y5zLeP4ZbdbaaE8VhTs7QnZLaZKBRfDafHs9R+wZEZuoGW548bTZ+jbztd4ko/Xoaoujpplrzf2/7rUR4O8rkFU1Wf8mC62xqiOOCOuP710pYVRDzx2g/yAgf76Xdi19+Pm+HGVXGv67c0h3tuzV2aTD1LYu7q1SW7y+Gs6+QBN2tOYpO/6mkvlQ0nqdxcKT0WYezVavZXb9BvFaOXkF3G+vnNpxIMsc9kptCBzWYFNJqNAktnAIdPZWeRD/AeHhiuoGcvC0QAAAABJRU5ErkJggg==" alt="StopAtDoc Logo" />
+			</div>
+		</header>
+
+		<section id="main-section">
+			<div class="login-form">
+				<h1 class="text-center">Login</h1>
+				<div class="text-center">
+					<input id="email" name="email" type="text" placeholder="Phone number or Email" />
+					<input id="password" name="password" type="password" placeholder="Password" />
+				</div>
+				<div class="action-btn text-center">
+					<button id="login-btn" type="submit" name="logIn" value="Log In">Log In</button>
+					<button id="signup-btn" type="submit" name="Signup" value="Sign up">Sign up</button>
+				</div>
+				<div class="line text-center">
+					<p class="line-sideways">or</p>
+				</div>
+				<div class="fb-connect text-center">
+					<button id="fb-btn" type="submit" name="facebook" value="Connect with facebook">Connect with facebook</button>
+				</div>
+			</div>
+
+			<script type="text/template" id="userViewTemplate">
+	            <div id="userView">
+	               
+	            </div>
+        	</script>
+		</section>
+		<script type="text/template" id="userViewTemp">
+			<p class="user-id">User Id: {{uid}}</p>
+			<div class="user-view">
+				<div>
+					<label for="name">
+						<span class="bold">Name:</span>
+						<span>&nbsp;{{name}}</span>
+					</label>
+				</div>
+				<div>
+					<label for="email">
+						<span class="bold">Email:</span>
+						<span>&nbsp;{{email}}</span>
+					</label>
+				</div>
+			</div>
+			<p class="user-id">Past Appointments:-</p>
+		</script>
+		<script type="text/template" id="pastAppointmentTemp">
+			<div class="oh past-appointments">
+				<img class="fllt" src="{{src}}" alt="doctor photo" width="80" height="80"/>
+				<div class="fllt">
+					<div>
+						<span class="bold">Date:</span>
+						<span>{{date}}</span>
+					</div>
+					<div>
+						<span class="bold">Name:</span>
+						<span>&nbsp;{{name}}</span>
+					</div>
+				</div>
+			</div>
+		</script>
+		<div id="loader-view">
+			<img src="images/ajax-loader.gif" alt="loader">
+		</div>	
+		<footer>
+			<div class="footer text-center">
+				CopyRight &copy; 2014, StopAtDoc
+			</div>
+		</footer>
+		<script src="scripts/jquery.js"></script>
+		<script src="scripts/underscore.js"></script>
+		<script type="text/javascript" src="scripts/index.js"></script>
+	</body>
+</html>

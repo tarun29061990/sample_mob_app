@@ -1,0 +1,128 @@
+body{
+	margin:0;
+	padding:0;
+}
+header{
+	width:100%;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.fllt{
+	float:left;
+}
+
+.flrt{
+	float:right;
+}
+
+.oh{
+	overflow: hidden;
+}
+
+input[type="text"],input[type="password"]{
+	width: 98%;
+	padding: 13px;
+	font-size: 1em;
+	margin-bottom: 10px;
+}
+
+.line-sideways::before{
+	content:"----------------------";
+	color:#ccc;
+	margin-right: 12px;
+}
+
+.line-sideways::after{
+	content:"----------------------";
+	color: #ccc;
+	margin-left: 12px;
+}
+.line{
+	margin:60px 0;
+	width:98%;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.header{
+	background:#1580a0;
+	padding:10px;
+}
+
+.footer{
+	background:#1580a0;
+	padding:10px;
+	color:white;
+}
+
+.login-form h1{
+	font-size: 1.6em;
+	font-weight: normal;
+}
+
+.action-btn{
+	margin-top: 20px;
+}
+
+.action-btn button{
+	border: none;
+	padding: 10px;
+	width: 40%;
+	font-size: 1em;
+	color: white;
+	background: #1580a0;
+}
+
+.fb-connect button{
+	background: #44619d;
+	color: white;
+	font-size: 1em;
+	width: 70%;
+	padding: 10px;
+	border: none;
+}
+
+
+
+/*****User View CSS *******/
+
+.user-id{
+
+	margin:7%;
+	font-size: 1em;
+}
+.user-view{
+	margin: 10% 0 0 15%;
+	font-size: 1em;
+}
+
+.user-view div{
+	margin-bottom: 3%;
+}
+
+.past-appointments{
+	margin-left: 3%;
+	font-size: 1em;
+}
+.past-appointments div{
+	margin: 2%;
+	width: 70%;
+}
+
+#loader-view{
+	display: none;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+}
