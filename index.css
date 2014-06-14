@@ -36,18 +36,18 @@ input[type="text"],input[type="password"]{
 }
 
 .line-sideways::before{
-	content:"----------------------";
+	content:"-----------------";
 	color:#ccc;
 	margin-right: 12px;
 }
 
 .line-sideways::after{
-	content:"----------------------";
+	content:"-----------------";
 	color: #ccc;
 	margin-left: 12px;
 }
 .line{
-	margin:60px 0;
+	margin:50px 0;
 	width:98%;
 }
 
